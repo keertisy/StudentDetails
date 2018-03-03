@@ -35,7 +35,7 @@ public class Test {
 				  System.out.println("Enter the "+(i+1)+"student details");
 				  try {
 					  Class.forName("com.mysql.jdbc.Driver");
-					  Connection conn1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/javaassinment","root","ksy$1531");
+					  Connection conn1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/javaassinment","root","12345");
 					  String sql= "insert into student values(?,?,?,?,?)";
 					  PreparedStatement   pstmt = conn1.prepareStatement(sql);
 					  
@@ -85,7 +85,7 @@ public class Test {
 	     { 
 			  try {
 				  Class.forName("com.mysql.jdbc.Driver");
-				 Connection conn1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/javaassinment","root","ksy$1531");
+				 Connection conn1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/javaassinment","root","12345");
 				  System.out.println("Enter the student id to be ");
 			      id=sc.nextInt();
 			
@@ -124,7 +124,7 @@ public class Test {
 	     {
 	    	 try {
 				  Class.forName("com.mysql.jdbc.Driver");
-				  Connection conn1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/javaassinment","root","ksy$1531");
+				  Connection conn1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/javaassinment","root","12345");
 				  System.out.println("Enter the student id to be deleted  ");
 			      del=sc.nextInt();
 				  String sql= " delete from student where Roll_no = ?";
@@ -146,7 +146,7 @@ public class Test {
 	    	 System.out.println("Displying the table contents");
 	    	 try {
 	    	Class.forName("com.mysql.jdbc.Driver");
-			 Connection conn1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/javaassinment","root","ksy$1531");
+			 Connection conn1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/javaassinment","root","12345");
 			 PreparedStatement   pstmt = conn1.prepareStatement("select * from student");
 			 ResultSet result =pstmt.executeQuery();
 			 while(result.next())

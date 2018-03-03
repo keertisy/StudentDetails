@@ -456,7 +456,7 @@ public class Test1 {
 		 try
 		 {
 			 Class.forName("com.mysql.jdbc.Driver");
-			 Connection conn1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/javaassinment","root","ksy$1531");
+			 Connection conn1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/javaassinment","root","12345");
 			 System.out.println("Connected");
 		     return conn1;
 		 }catch(Exception e) {
